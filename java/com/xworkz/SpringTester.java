@@ -36,4 +36,4 @@ public class SpringTester {
 }
 
 //output
-//StudentAL [stuAL=[Student [age=10, name=Hari, address=Bangalore], Student [age=10, name=Hari, address=Bangalore], Student [age=10, name=Hari, address=Bangalore]]]
+//StudentAL [stuAL=[Student [age=10, name=Hari, address=Bangalore], Student [age=12, name=Swathi, address=Mangalore], Student [age=9, name=Kavitha, address=Mumbai]]]
