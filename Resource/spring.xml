@@ -41,4 +41,29 @@
 
 </bean>
 
+<bean class="com.xworkz.studental.Student" id="student1">
+<constructor-arg name="age" value="10"/>
+<constructor-arg name="name" value="Hari"/>
+<constructor-arg name="address" value="Bangalore"/>
+</bean>
+<bean class="com.xworkz.studental.Student" id="student2">
+<constructor-arg name="age" value="10"/>
+<constructor-arg name="name" value="Hari"/>
+<constructor-arg name="address" value="Bangalore"/>
+</bean>
+<bean class="com.xworkz.studental.Student" id="student3">
+<constructor-arg name="age" value="10"/>
+<constructor-arg name="name" value="Hari"/>
+<constructor-arg name="address" value="Bangalore"/>
+</bean>
+
+<bean class="com.xworkz.studental.StudentAL" id="studentAL">
+<property name="stuAL">
+	<list value-type="com.xworkz.studental.Student">
+		<ref bean="student1"/>
+		<ref bean="student2"/>
+		<ref bean="student3"/>
+	</list>
+</property>
+</bean>
 </beans>
