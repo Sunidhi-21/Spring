@@ -14,7 +14,7 @@ public class CropTester {
 		 CropEntity cropEntity = new CropEntity("Ragi", CropType.KHARIF, 40.0, CropSeason.MONSOON, true, 5);
 		 
 		 CropDAO cropDAOImpl = new CropDAOImpl();
-		 cropDAOImpl.saveCrop(cropEntity);
+		 cropDAOImpl.create(cropEntity);
 		 
 	}
 

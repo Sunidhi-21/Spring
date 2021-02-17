@@ -4,6 +4,6 @@ import com.xworkz.crop.entity.CropEntity;
 
 public interface CropDAO {
 	
-	void saveCrop(CropEntity cropEntity);
+	Long create(CropEntity cropEntity);
 	
 }

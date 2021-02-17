@@ -52,5 +52,4 @@ public class CropEntity {
 		this.organic = organic;
 		this.life = life;
 	}
-	
 }
