@@ -10,12 +10,14 @@ import javax.persistence.Table;
 import crop.CropSeason;
 import crop.CropType;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
 @ToString
+@NoArgsConstructor
 @Entity
 @Table(name="crop_entity")
 public class CropEntity {
@@ -52,4 +54,5 @@ public class CropEntity {
 		this.organic = organic;
 		this.life = life;
 	}
+
 }

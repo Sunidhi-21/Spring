@@ -6,6 +6,9 @@
 	http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+<bean class="com.xworkz.crop.service.CropServiceImpl" id="cropServiceImpl">
+<constructor-arg ref="cropDAOImpl"/>
+</bean>
 
 <bean class="org.springframework.orm.hibernate5.LocalSessionFactoryBean" id="localSessionFactoryBean">
 <property name="configLocation" value="hibernate/mysql.xml"></property>

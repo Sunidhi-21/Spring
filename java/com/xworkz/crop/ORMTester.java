@@ -1,4 +1,4 @@
-package com.xworkz;
+package com.xworkz.crop;
 
 import java.util.Arrays;
 
@@ -21,7 +21,8 @@ public class ORMTester {
 		System.out.println(Arrays.toString(container.getBeanDefinitionNames()));
 		CropDAO cropDAO = container.getBean(CropDAO.class);
 		CropEntity cropEntity =  new CropEntity("Rice", CropType.KHARIF, 40.0, CropSeason.MONSOON, true, 5);
-		cropDAO.create(cropEntity);
+		System.out.println(cropDAO.create(cropEntity));
+		
 	
 	}
 

@@ -1,5 +1,6 @@
 package com.xworkz.crop.dao;
 
+import java.io.Serializable;
 import java.util.Objects;
 
 import org.hibernate.HibernateException;
@@ -32,8 +33,12 @@ public class CropDAOImpl implements CropDAO {
 		try(Session session =  factory.openSession()){
 			transaction = session.getTransaction();
 			session.beginTransaction();
-			session.save(cropEntity);
+			Serializable id=session.save(cropEntity);
+			//Serializable id=session.save(entity);			
+//			session.getTransaction().commit();
+//			return (Long)id;
 			session.getTransaction().commit();
+			return (Long)id;
 		}catch (HibernateException e) {
 			e.printStackTrace();
 			transaction.rollback();
@@ -46,6 +51,8 @@ public class CropDAOImpl implements CropDAO {
 	}
 
 }
+
+
 		
 //		Session session = null;
 //		
